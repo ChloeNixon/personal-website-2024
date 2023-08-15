@@ -1,0 +1,52 @@
+
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:600,300,300italic,500,400|Josefin+Slab:400");
+
+.background {
+    background-color: #572E7F;
+    color: #ffca48;
+    font-family: "Josefin Sans";
+}
+
+.wrapper {
+    width: 100%;
+}
+
+.one-project {
+}
+
+.header {
+    border: #ffca48;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-width: .9px;
+    font-size: 42px;
+    font-weight: 300;
+    letter-spacing: 0px;
+    line-height: normal;
+    position: relative;
+    margin: 0px 10px 10px 20px;
+
+}
+
+.tech-stack {
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 200;
+    letter-spacing: 0;
+    line-height: normal;
+    position: relative;
+    white-space: nowrap;
+    margin: 10px 10px 10px 20px;
+}
+
+.body-def {
+    font-size: 24px;
+    font-weight: 200;
+    letter-spacing: 0;
+    line-height: normal;
+    position: relative;
+    margin: 10px 10px 10px 20px;
+}
+
+.contributions {
+}

@@ -1,38 +1,304 @@
-.App {
-  text-align: center;
+
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:600,300,300italic,500,400|Josefin+Slab:400");
+
+.desktop {
+    background-color: #1d1358;
+    color: #ffca48;
+    font-family: "Josefin Sans";
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.hero {
+    width: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.hero-imgs {
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.hero-img {
+    position: relative;
+    width: 100%
 }
 
-.App-link {
-  color: #61dafb;
+.hero-wrapper {
+    font-family: "Josefin Slab", Helvetica;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 0;
+    width:100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/*.chloe-nixon {*/
+/*    font-size: 50px;*/
+/*    width: 100%;*/
+/*    height: auto;*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    transform: translateY(110%);*/
+/*}*/
+
+.chloenixon {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    width: 35%;
+    height: auto;
+    animation: slidedown 1.5s ease;
+}
+
+.chloenixonsub {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 270%);
+    width: 40%;
+    height: auto;
+    animation: slidedown 1.8s ease;
+}
+
+@keyframes slidedown {
+    0% {
+        margin-top: -10px;
+        opacity: 0;
+    }
+    50% {
+        margin-top: -10px;
+        opacity: 0;
+    }
+    100% {
+        margin-top: 0;
+        opacity: 1;
+    }
+}
+
+/*.subheader1 {*/
+/*    font-size: 15px;*/
+/*    width: 100%;*/
+/*    height: auto;*/
+/*    position: absolute;*/
+/*    top: 90px;*/
+/*}*/
+
+/*.subheader2 {*/
+/*    font-size: 15px;*/
+/*    width: 100%;*/
+/*    height: auto;*/
+/*    position: absolute;*/
+/*    top: 125px;*/
+/*}*/
+
+.icons-img {
+}
+
+.moon-img {
+    position: absolute;
+    top: 1%;
+    right: 2%;
+    width: 6%;
+    height: auto;
+}
+
+.git-img {
+    position: relative;
+    left: 37.2%;
+    width: 5%;
+    transform: translateY(-275%);
+    transition: ease;
+    transition-duration: .3s;
+}
+.git-img:hover {
+    scale: 1.04;
+}
+
+.email {
+    position: relative;
+    left: 39.2%;
+    width: 5%;
+    transform: translateY(-275%);
+    top: -900%;
+    height: auto;
+    transition: ease;
+    transition-duration: .3s;
+}
+.email:hover {
+    scale: 1.04;
+}
+
+.linkedin {
+    position: relative;
+    left: 41.2%;
+    width: 5%;
+    transform: translateY(-275%);
+    height: auto;
+    transition: ease;
+    transition-duration: .3s;
+}
+.linkedin:hover {
+    scale: 1.04;
+}
+
+.resume {
+    position: relative;
+    left: 43.2%;
+    width: 5%;
+    transform: translateY(-275%);
+    height: auto;
+    transition: ease;
+    transition-duration: .3s;
+}
+.resume:hover {
+    scale: 1.04;
+}
+
+
+.abcloud {
+    position: absolute;
+    transform: translateY(60%);
+    width: 560px;
+
+}
+
+.aboutus-header {
+    font-family: "Josefin Slab";
+    font-size: 64px;
+    font-weight: 400;
+    padding-top: 150px;
+    margin: 100px 0px 5px 5px;
+    letter-spacing: 0;
+    left: 10px;
+    line-height: normal;
+    position: relative;
+    white-space: nowrap;
+}
+
+.hello {
+    font-size: 42px;
+    font-weight: 200;
+    margin: 0px 0px 15px 35px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: relative;
+    top: 0;
+    width: 197px;
+}
+
+.aubody {
+    font-size: 24px;
+    font-weight: 210;
+    margin: 0px 20px 25px 35px;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: relative;
+    top: 0;
+    max-width: 625px;
+}
+
+.reachme {
+    font-size: 24px;
+    font-weight: 210;
+    margin: 0px 20px 15px 65px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: relative;
+    max-width: 625px;
+}
+
+
+
+.lovebox {
+
+    text-align: right;
+    justify-items: flex-end;
+    display:block;
+}
+
+.loveheader {
+    text-align: left;
+    max-width: 500px;
+    font-family: "Josefin Slab";
+    font-size: 42px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+    position: relative;
+    transform: translateY(30%);
+}
+
+.lovetext {
+    font-size: 30px;
+    font-weight: 200;
+    letter-spacing: 0;
+    line-height: normal;
+    position: relative;
+}
+
+.lizard-text {
+    margin-right: 55%;
+    transform: translateY(95%);
+    text-align: right;
+}
+
+.lizard {
+    width: 60%;
+    position: relative;
+    height: auto;
+}
+
+.book-text {
+    margin-left: 0px;
+    text-align: left;
+}
+
+.book {
+    width: 40%;
+    position: relative;
+    transform: translateX(-140%);
+    height: auto;
+}
+
+.coffee-text {
+    position: absolute;
+    right: 7%;
+    text-align: right;
+
+}
+
+.coffee {
+    position: absolute;
+    width: 30%;
+    height: auto;
+    right: 25%;
+}
+
+
+.placeholder {
+    position: relative;
+    margin-bottom: 0px;
+    display:block;
+    width: 21%;
+    height: auto
+}
+
+.projclouds {
+    position: relative;
+    width: 100%;
+    height: auto;
+    transform: translateY(4px);
+    margin-bottom: 0;
+}
+
+.projects {
+    background-color: #572E7F;
+}
+
+.projheader {
+    font-family: "Josefin Slab";
+    text-align: center;
+    margin-top: 0px;
+    font-size: 90px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+    position: relative;
+    margin-bottom: 25px;
 }
