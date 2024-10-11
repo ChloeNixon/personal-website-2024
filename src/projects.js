@@ -1,54 +1,98 @@
 import React from "react";
 import "./projects.css";
 import {Row, Col} from "antd";
+import projendclouds from "./assets/proj-header.svg";
+
+const leads = [
+    {
+        title: "VandyHacks XI",
+        position: "President",
+        desc: "Organize Vanderbilt's annual student-run hackathon by leading logistics, development, and all major projects.",
+    },
+    {
+        title: "Out in Engineering",
+        position: "Head of Outreach",
+        desc: "Manage org external communications, marketing, logos, and merchandise.",
+    },
+    {
+        title: "Vanderbilt Data Science",
+        position: "Former V.P. & Director of Marketing",
+        desc: "Worked on designing the website, recruiting developers, and promoting all events.",
+    },
+    {
+        title: "Google Developer Group",
+        position: "Former Director of Design",
+        desc: "Created logos, posters, marketing outreach for all events.",
+    },
+]
 
 const projs = [
     {
-        title: "Vanderbilt Data Science Club Website",
-        tech: "React, Node.js, ChakraUI",
-        desc: "Part of implementing the official Vanderbilt Data Science club website, creating a responsive feed" +
-            "of club information using React packages and API integration.",
-        cont1: "* Utilized the Facebook Basic Instagram Display API to create a responsive Instagram feed using async. " +
-            "states, styled with ChakraUI grids and style components.",
-        cont2: "* Designed the front page by applying ChakraUI grids, styles and themes along with Javascript " +
-            "components and animations.",
-        cont3: "",
-    },
-    {
-        title: "Stuttgart Eagles",
-        tech: "React, Node.js, HTML, CSS, .antd",
-        desc: "I developed a React app website for Stuttgart Eagles, an NPO basketball team for children of military " +
-            "families in Germany. I communicated with both another developer and the non-profit team to make a revamped " +
-            "website for all team information. \n",
-        cont1: "* Headed development of the site’s frontend by creating CSS animations, javascript-based animations and " +
-            "transitions, an on-load component, image gallery using react packages, and unique graphics in order to " +
-            "create engaging site visuals.",
-        cont2: "* Modeled a responsive web layout for phone and computer screens using both .antd grid systems and CSS properties.",
-        cont3: "",
+        title: "VandyHacks XI Promo Website",
+        position: "Project Manager & Lead Programmer",
+        tech: "React, MantineUI, Illustrator, CSS",
+        desc: "Lead developers in creating website, headed software programming & design.",
     },
     {
         title: "VandyHacks X Promo Website",
+        position: "Designer",
         tech: "React, Node.js, Figma, Illustrator",
-        desc: "I worked closely with a design team to create the design and layout for our hackathon’s " +
-            "10th annual promotional website.",
-        cont1: "* Modeled the theme, color scheme, graphics, outlines, and building designs for the website from scratch.",
-        cont2: "* Drew assets using illustrator to create a neon cityscape, and closely collaborated with other designers to create a site outline in Figma.",
-        cont3: "* Communicated with the development team to create wireframe drafts for multiple potential websites, and helped determine frontend tasks and components for the site.",
+        desc: "Designer for assets and UI/UX for the VandyHacks X Website.",
     },
     {
-        title: "I.O.S. App Development, The Gist",
-        tech: "Swift, SwitftUI, MongoDB, Figma",
-        desc: "I’ve started production of an IOS task management app that works to use tomogachi-esc progression " +
-            "centered around real-world task completion to make scheduling more engaging.",
-        cont1: "* Drafted a figma layout of the main app pages and UI, including color schemes, icons, frontend and navbar.",
-        cont2: "* Part of writing and editing of the documentation. \n",
-        cont3: "",
+        title: "\"Parked\" Hackathon Project",
+        position: "Backend Developer",
+        tech: "React, Kintone, RESTful API, Express, Node.js",
+        desc: "Programmed Kintone backend API & backend, HooHacks winner of Best Use of Kintone DB",
+    },
+    {
+        title: "Scrambled",
+        position: "Developer",
+        tech: "React, RESTful API, Express, Node.js, ChakraUI",
+        desc: "Created project using dictionary API to make a hangman-type game.",
+    },
+    {
+        title: "Stuttgart Eagles",
+        position: "Co-Developer",
+        tech: "React, Node.js, HTML, CSS, .antd",
+        desc: "Developed a React app website for Stuttgart Eagles, an NPO children's basketball team."
     },
 ];
 
 const Projects = () => {
     return (
         <div className="background">
+            <div className="projects">
+                <div className="projheader">
+                    Leadership
+                </div>
+            </div>
+            <Row className="wrapper" gutter={25} align="center">
+                {leads.map((lead) => (
+                    <Col xs={23} sm={23} md={12} lg={12} xl={12}>
+                        <div className="one-project-lead">
+                            <div className="header">
+                                {lead.title}
+                            </div>
+                            <div className="position">
+                                {lead.position}
+                            </div>
+                            <div className="tech-stack">
+                                {lead.tech}
+                            </div>
+                            <div className="body-def">
+                                {lead.desc}
+                            </div>
+                        </div>
+                        <br></br><br></br><br></br>
+                    </Col>
+                ))}
+            </Row>
+            <div className="projects">
+                <div className="projheader">
+                    Projects
+                </div>
+            </div>
             <Row className="wrapper" gutter={25} align="center">
                 {projs.map((project) => (
                     <Col xs={23} sm={23} md={12} lg={12} xl={12}>
@@ -56,19 +100,17 @@ const Projects = () => {
                             <div className="header">
                                 {project.title}
                             </div>
+                            <div className="position">
+                                {project.position}
+                            </div>
                             <div className="tech-stack">
                                 {project.tech}
                             </div>
                             <div className="body-def">
                                 {project.desc}
                             </div>
-                            <div className="body-def contributions">
-                                <ul>{project.cont1}</ul>
-                                <ul>{project.cont2}</ul>
-                                <ul>{project.cont3}</ul>
-                            </div>
-                            <br></br><br></br>
                         </div>
+                        <br></br><br></br><br></br>
                     </Col>
                 ))}
             </Row>

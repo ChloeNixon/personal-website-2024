@@ -1,23 +1,22 @@
 import React from "react";
 import "./App.css";
 import {Row, Col} from "antd";
-import Projects from "./projects.js"
+import Projects from "./projects.js";
 
-import hero from "./assets/hero.png"
-import moon from "./assets/moon.png"
-import cn from "./assets/cn.png"
-import cnsubheader from "./assets/cn-subheader.png"
-import git from "./assets/github-icon.png"
-import email from "./assets/email-icon.png"
-import linkedin from "./assets/linkedin-icon.png"
-import resume from "./assets/resume-icon.png"
-import abcloud from "./assets/aboutuscloud.png"
-import snake from "./assets/snake.png"
-import book from "./assets/book.png"
-import coffee from "./assets/coffee.png"
-import placeholder from "./assets/blankspace-01.png"
-import projstartclouds from "./assets/proj-header-clouds-04.png"
-import projendclouds from "./assets/proj-footer-clouds-04.png"
+import hero from "./assets/hero.svg";
+import cn from "./assets/cn.svg";
+import cnsubheader from "./assets/cn-subheader.png";
+import git from "./assets/github-icon.png";
+import email from "./assets/email-icon.png";
+import linkedin from "./assets/linkedin-icon.png";
+import resume from "./assets/resume-icon.png";
+import abcloud from "./assets/aboususcloud.svg";
+import snake from "./assets/snake.png";
+import book from "./assets/book.svg";
+import coffee from "./assets/coffee.png";
+import placeholder from "./assets/blankspace-01.png";
+import projstartclouds from "./assets/proj-header-1.svg";
+import projendclouds from "./assets/proj-header.svg";
 
 function App() {
     return (
@@ -31,7 +30,6 @@ function App() {
                 <img className="hero-img" src={hero} alt=""/>
                 <img className="chloenixon" src={cn} alt=""/>
                 <img className="chloenixonsub" src={cnsubheader} alt=""/>
-                <img className="moon-img" src={moon} alt=""/>
                 <a href="https://github.com/chloenixon" target="_blank" rel="noreferrer" >
                     <img className="git-img" src={git} alt=""/>
                 </a>
@@ -56,17 +54,14 @@ function App() {
                             Hello!
                         </div>
                         <div className="aubody">
-                            My name is Chloe, I'm a junior studying computer science at Vanderbilt University. I have
-                            worked on frontend
-                            and fullstack software projects and am currently learning I.O.S. development. I am also
-                            making many
-                            different connections within my school’s orgs. and clubs. I love software development for
-                            giving me
-                            the ability to build something completely new from the bottom up :)
+                            My name is Chloe, I'm a senior Computer Science major at Vanderbilt University. I have
+                            experience working on fullstack and service-based software, and am looking fowards to
+                            my career in software engineering in the near future.
+                            I love connecting with campus organizations, leading large-scale projects, and designing websites.
                         </div>
                         <div className="reachme">
-                            I’m currently looking for any and all new experiences in software development,
-                            feel free to reach out to me!
+                            I’m currently open to new experiences in software development,
+                            so feel free to reach out to me!
                         </div>
                         <br></br><br></br><br></br>
                     </aboutus>
@@ -93,11 +88,7 @@ function App() {
             </Row>
             <img className="placeholder" src={placeholder} alt=""/>
 
-            <img className="projclouds" src={projstartclouds} alt=""/>
             <div className="projects">
-                <div className="projheader">
-                    Projects
-                </div>
                 <Projects />
                 <img className="projclouds" src={projendclouds} alt=""/>
             </div>

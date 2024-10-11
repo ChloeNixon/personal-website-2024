@@ -2,13 +2,14 @@
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans:600,300,300italic,500,400|Josefin+Slab:400");
 
 .desktop {
-    background-color: #1d1358;
-    color: #ffca48;
+    background-color: #112F49;
+    color: #ffc964;
     font-family: "Josefin Sans";
 }
 
 .hero {
     width: auto;
+    overflow: hidden;
 }
 
 .hero-imgs {
@@ -17,7 +18,8 @@
 
 .hero-img {
     position: relative;
-    width: 100%
+    width: 100%;
+    overflow: hidden;
 }
 
 .hero-wrapper {
@@ -288,7 +290,7 @@
 }
 
 .projects {
-    background-color: #572E7F;
+    background-color: #112F49;
 }
 
 .projheader {
