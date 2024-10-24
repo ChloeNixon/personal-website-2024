@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/personal-website-2024/static/css/main.054a7b85.css",
-    "main.js": "/personal-website-2024/static/js/main.a058069a.js",
+    "main.js": "/personal-website-2024/static/js/main.1e46ec00.js",
     "static/js/787.4c931e08.chunk.js": "/personal-website-2024/static/js/787.4c931e08.chunk.js",
     "static/media/coffee.png": "/personal-website-2024/static/media/coffee.caee74511ad80f3c68a6.png",
     "static/media/snake.png": "/personal-website-2024/static/media/snake.2f19dbb8659cc79122f2.png",
-    "static/media/hero.svg": "/personal-website-2024/static/media/hero.f7129ba3a6720bc6f4cbeaf5ba03bbfd.svg",
+    "static/media/hero.svg": "/personal-website-2024/static/media/hero.171c006471f191268fb25d184da6e51e.svg",
     "static/media/cn-subheader.png": "/personal-website-2024/static/media/cn-subheader.2491bbb56d01d5a0b21c.png",
     "static/media/github-icon.png": "/personal-website-2024/static/media/github-icon.2a909ac38c2a1323adb2.png",
     "static/media/email-icon.png": "/personal-website-2024/static/media/email-icon.3b868dfd4f0aae5fa401.png",
@@ -18,11 +18,11 @@
     "static/media/cn.svg": "/personal-website-2024/static/media/cn.ac5f51f68a5005fb8cc133e04dfa95aa.svg",
     "index.html": "/personal-website-2024/index.html",
     "main.054a7b85.css.map": "/personal-website-2024/static/css/main.054a7b85.css.map",
-    "main.a058069a.js.map": "/personal-website-2024/static/js/main.a058069a.js.map",
+    "main.1e46ec00.js.map": "/personal-website-2024/static/js/main.1e46ec00.js.map",
     "787.4c931e08.chunk.js.map": "/personal-website-2024/static/js/787.4c931e08.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.054a7b85.css",
-    "static/js/main.a058069a.js"
+    "static/js/main.1e46ec00.js"
   ]
 }
